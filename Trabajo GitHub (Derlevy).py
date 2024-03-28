@@ -27,7 +27,6 @@ jean = {1: ['Azul', 20], 2:['Verde', 20], 3:['Café', 20], 4: ['Negro', 20], 5: 
 
 zapatos = {1:['Botas','Café', 25], 2: ['Tenis','Azul', 20], 3:['Botas','Negro', 25], 4: ['Tenis','Blanco', 20]}
 
-Articulos=0
 while True:
    P = int(input("""Seleccione una Camiseta:
              1- camisetas[1]
@@ -50,6 +49,11 @@ while True:
                  2- zapatos[2]
                  3- zapatos[3]
                  4- zapatos[4]"""))
+    break
+Compras.append(P,S,T)
+
+Total = camisetas[P][2] + jean[S][1] + zapatos[T][2]
+TotalCompras.append(Total)
         
     
         
